@@ -1,5 +1,4 @@
 import Tour from './Tour';
-// var uniqid = require('uniqid');
 
 function Tours({tours, deleteTour}) {
   console.log(tours)  
