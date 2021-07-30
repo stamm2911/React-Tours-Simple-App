@@ -22,9 +22,31 @@ body{
     margin: 10px;
 }
 
-img{
-    height: 50%;
+.title-price-container{
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px red;
+    color: red;
+    font-size: large;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;

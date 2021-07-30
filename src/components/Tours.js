@@ -1,13 +1,13 @@
 import Tour from './Tour';
-var uniqid = require('uniqid');
+// var uniqid = require('uniqid');
 
-function Tours({tours}) {
+function Tours({tours, deleteTour}) {
   console.log(tours)  
   return (
     <div className="main-container">
-      <h1>Our TourS</h1>
+      <h1>Our Tours</h1>
       {tours.map(item => (
-          <Tour key={uniqid()} items={item}/>
+          <Tour key={item.id} items={item} deleteTour={deleteTour}/>
       ))}
     </div>
   );
